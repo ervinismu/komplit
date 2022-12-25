@@ -1,4 +1,4 @@
-function! vikopi#DisplayTime(...)
+function! komplit#DisplayTime(...)
     if a:0 > 0 && (a:1 == "d" || a:1 == "t")
         if a:1 == "d"
             echo strftime("%b %d")
@@ -10,10 +10,10 @@ function! vikopi#DisplayTime(...)
     endif
 endfunction
 
-function! vikopi#DefineWord(...)
-    echo "Hello vikopi! DefineWord"
+function! komplit#DefineWord(...)
+    echo "Hello komplit! DefineWord"
 endfunction
 
-function! vikopi#AspellCheck(...)
-    echo "Hello vikopi! AspellCheck"
+function! komplit#AspellCheck(...)
+    echo "Hello komplit! AspellCheck"
 endfunction

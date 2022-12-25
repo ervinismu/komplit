@@ -6,12 +6,12 @@
 " Prevents the plugin from being loaded multiple times. If the loaded
 " variable exists, do nothing more. Otherwise, assign the loaded
 " variable and continue running this instance of the plugin.
-if exists("g:loaded_vikopi")
+if exists("g:loaded_komplit")
     finish
 endif
-let g:loaded_vikopi = 1
+let g:loaded_komplit = 1
 
 " Exposes the plugin's functions for use as commands in Vim.
-command! -nargs=0 DisplayTime call vikopi#DisplayTime()
-command! -nargs=0 DefineWord call vikopi#DefineWord()
-command! -nargs=0 AspellCheck call vikopi#AspellCheck()
+command! -nargs=0 DisplayTime call komplit#DisplayTime()
+command! -nargs=0 DefineWord call komplit#DefineWord()
+command! -nargs=0 AspellCheck call komplit#AspellCheck()
